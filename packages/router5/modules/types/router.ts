@@ -4,7 +4,7 @@ import {
     QueryParamsOptions,
     RouteNode,
     RouteNodeState,
-    URLParamsEncodingType
+    URLParamsEncodingType,
 } from 'route-node'
 import {
     State,
@@ -13,7 +13,7 @@ import {
     DoneFn,
     NavigationOptions,
     Unsubscribe,
-    CancelFn
+    CancelFn,
 } from './base'
 
 export interface Route<
@@ -198,7 +198,7 @@ export interface Plugin {
 export type Middleware = (
     toState: State,
     fromState: State,
-    done: DoneFn
+    done?: DoneFn
 ) => boolean | Promise<any> | void
 
 export type MiddlewareFactory<

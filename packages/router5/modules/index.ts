@@ -14,10 +14,11 @@ export {
     Plugin,
     PluginFactory,
     Middleware,
+    MiddlewareFactory,
     SubscribeState,
     SubscribeFn,
     Listener,
-    Subscription
+    Subscription,
 } from './types/router'
 export { State, StateMeta, NavigationOptions } from './types/base'
 
@@ -29,7 +30,7 @@ export {
     constants,
     errorCodes,
     ErrorCodes,
-    Constants
+    Constants,
 }
 
 export default createRouter
